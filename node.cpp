@@ -3,6 +3,7 @@
 #include "node.h"
 #include "student.h"
 
+// cpp file for the node class
 Node::Node() // default constructor
 {
   // initialize variables

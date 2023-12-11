@@ -18,6 +18,7 @@ void printNode(Node* nextNode, Node* &startNode);
 
 int main()
 {
+  // test if the node works
   Student* bobbie = new Student(12345);
   Student* henriette = new Student(67890);
   Student* eustacus = new Student(13579);
@@ -56,15 +57,27 @@ void addNode(Student* newstudent, Node* &startNode)
     }
 }
 
+/**
+ * this function prints out the linked list using a recursive technique. 
+ * 
+ * @param nextNode | this is like the current node (the recursion is
+ * called with this node?)
+ * @param startNode | we have to pass in the head node with this since global
+ * variables aren't allowed.
+ */
 void printNode(Node* nextNode, Node* &startNode)
 {
+  // print out "Node List:" at the first node
   if (nextNode == startNode)
     {
       cout << "Node List:" << endl;
     }
   if (nextNode != NULL)
     {
+      // print out the student info held inside the current node
       cout << nextNode->getStudent()->id << endl;
+
+      // call the printNode function (recursively) on the next node in the list
       printNode(nextNode->getNext(), startNode);
     }
 }
