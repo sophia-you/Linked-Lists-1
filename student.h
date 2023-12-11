@@ -2,6 +2,10 @@
 #define	STUDENT_H
 #include <iostream>
 #include <cstring>
+
+/*
+ * Students are objects that hold student info, like name, id, and gpa.
+*/
 class Student
 {
  public:

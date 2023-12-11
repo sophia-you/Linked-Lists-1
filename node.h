@@ -4,7 +4,9 @@
 #include <cstring>
 #include "student.h"
 
-// Node class
+/* Node class. Each node stores a VALUE (a student) and a NEXT NODE (a pointer
+ * to the next node in the sequence
+ */
 class Node
 {
  public:
