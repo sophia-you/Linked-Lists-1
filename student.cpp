@@ -3,6 +3,7 @@
 #include "student.h"
 using namespace std;
 
+// cpp file for the Student class - includes constructors + destructors
 Student::Student() // default constructor
 {
   id = 0;
